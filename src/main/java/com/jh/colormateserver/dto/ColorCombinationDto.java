@@ -1,4 +1,4 @@
-package com.jh.colormateserver;
+package com.jh.colormateserver.dto;
 
 import lombok.Getter;
 import lombok.Setter;

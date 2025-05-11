@@ -1,7 +1,7 @@
 package com.jh.colormateserver.controller;
 
-import com.jh.colormateserver.entity.User;
-import com.jh.colormateserver.repository.UserRepository;
+import com.jh.colormateserver.dto.JoinDto;
+import com.jh.colormateserver.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @Slf4j
 public class UserController {
-    private final UserRepository userRepository;
+    private final UserService userService;
 
     @PostMapping("/signup")
-    public User SignUp(@RequestBody User user) {
-        log.info("SignUp user: {}", user);
-        return userRepository.save(user);
+    public String SignUp(@RequestBody JoinDto joinDto) {
+        userService.join(joinDto);
+        return "ok";
     }
 }

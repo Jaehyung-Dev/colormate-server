@@ -23,4 +23,7 @@ public class User {
 
     @Column(nullable = false)
     private String nickname;
+
+    @Column(nullable = false)
+    private String role = "USER";
 }

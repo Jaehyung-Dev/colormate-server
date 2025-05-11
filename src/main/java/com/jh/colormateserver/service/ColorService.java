@@ -1,6 +1,6 @@
 package com.jh.colormateserver.service;
 
-import com.jh.colormateserver.ColorCombinationDto;
+import com.jh.colormateserver.dto.ColorCombinationDto;
 import com.jh.colormateserver.entity.ColorCombination;
 import com.jh.colormateserver.repository.ColorRepository;
 import lombok.AllArgsConstructor;

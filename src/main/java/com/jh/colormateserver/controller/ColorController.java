@@ -1,11 +1,10 @@
 package com.jh.colormateserver.controller;
 
-import com.jh.colormateserver.ColorCombinationDto;
+import com.jh.colormateserver.dto.ColorCombinationDto;
 import com.jh.colormateserver.entity.ColorCombination;
 import com.jh.colormateserver.service.ColorService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
